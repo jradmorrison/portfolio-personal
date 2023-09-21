@@ -1,11 +1,14 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 /* Element Selectors  */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 header {
     background-color: #2E3457;
     margin: 0;
@@ -19,11 +22,6 @@ header ul li {
     color:  lightblue;
     font-size: 32px;
     border-bottom: 5px solid lightblue;
-}
-
-h1
-h2 {
-    color: #2E3457;
 }
 
 figure {
@@ -43,6 +41,7 @@ figure {
     margin: 15px 0;
     padding-right: 25px;
     font-size: 36px;
+    color: #2E3457;
 }
 
 .nav-links {
@@ -63,8 +62,17 @@ figure {
     right: 50px;
     bottom: 25px;
     font-size: 28px;
+    color: #2E3457;
 }
 
+.aside-about {
+    width: 20%;
+    font-size: 28px;
+    color: blue;
+    border-right: 3px solid blue;
+    padding: 25px 25px;
+    display: inline-block;
+}
 
 /* ID Selectors  */
 #banner {
