@@ -12,6 +12,8 @@ body {
 header {
     background-color: #31343d;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 header ul li {
@@ -41,7 +43,9 @@ figure {
 
 .section-name {
     background-color: #92cccd;
-    display: inline-block;
+    /* display: inline-block; */
+    display: flex;
+    flex-wrap: wrap;
     margin: 15px 0;
     padding: 5px 25px 5px 60px;
     font-size: 32px;
@@ -50,8 +54,8 @@ figure {
 
 .nav-links {
     display: flex;
-    display: inline-block;
     flex-wrap: wrap;
+    display: inline-block;    
     position: absolute;
     right: 75px;
     top: 25px;
@@ -63,9 +67,9 @@ figure {
     display: inline-block;
     background-color: #92cccd;
     position: absolute;
-    right: 50px;
-    bottom: 25px;
-    font-size: 26px;
+    right: 80px;
+    bottom: 15px;
+    font-size: 24px;
     color: #31343d;
 }
 
