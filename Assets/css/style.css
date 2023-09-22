@@ -19,6 +19,23 @@ header {
     padding: 0.5% 1% 0.5% 0;
 }
 
+header nav a {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25px;
+    text-decoration: none;
+    padding: 3px 0;
+    color:  #92cccd;
+    font-size: 150%;
+    font-weight: bolder;
+    border-bottom: 3px solid #92cccd;
+}
+
+header nav a:hover {
+    background-color: #92cccd;
+    color: #31343d;
+}
+
 h1 {
     display: flex;
     font-size: 300%;
@@ -36,23 +53,6 @@ h2 {
 
 nav {
     display: flex;
-    font-size: 150%;
-    font-weight: bolder;  
-}
-
-header nav a {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 25px;
-    text-decoration: none;
-    padding: 3px 0;
-    color:  #92cccd;
-    border-bottom: 3px solid #92cccd;
-}
-
-nav a:hover {
-    background-color: #92cccd;
-    color: #31343d;
 }
 
 figure {
@@ -60,6 +60,7 @@ figure {
     margin-bottom: 10px;
 }
 
+/* TODO: APPLY FLEX TO MAIN CONTENT SO THEY STACK AS SCREEN SIZE SHRINKS  */
 main {
     display: flex;
     flex-wrap: wrap;
@@ -68,6 +69,7 @@ main {
 
 main section {
     display: flex;
+    width: 100vw;
     margin: 1%;
 }
 
@@ -94,19 +96,34 @@ aside {
 }
 
 .content {
-    /* display: flex;
-    flex-wrap: wrap; */
+    display: flex;
+    /* flex-wrap: wrap; */
     width: 75%;
+    padding: 25px;
 }
 
 .content p {
     color: #445876;
-    padding: 0 0 0 25px;
+    /* padding: 0 0 0 25px; */
 }
 
-.card {
-    /* flex: 1 1 100vw; */
+/* TODO: FIGURE OUT WHY CONTACT ME SECTION WONT CENTER  */
+.content nav {
+    display: flex;
+    justify-content: center;
 }
+
+.content a {
+    
+    text-decoration: none;
+    padding: 3px 1%;
+    color:  #445876;
+    border-bottom: 3px solid #445876;
+}
+
+/* .card {
+    /* flex: 1 1 100vw;
+} */
 
 .card img {
     max-width: 100%;
@@ -149,4 +166,3 @@ aside {
         flex-direction: column;
     }
 }
-    
