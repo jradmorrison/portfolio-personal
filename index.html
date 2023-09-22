@@ -3,43 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/css/reset.css">
     <link rel="stylesheet" href="./Assets/css/style.css">
     <title>My Portfolio</title>
 </head>
 
 <body>
+<!-- Header  -->
     <header>
-        <Section class="section-name">
-            <h1 class="text-right">Jared Morrison</h1>
-        </Section>
-        <nav class="nav-links">
-        <ul>
-            <li>About Me</li>
-            <li>Work</li>
-            <li>Contact Me</li>
-            <li>Resume</li>
-        </ul>
-    </nav>
+        <h1>Jared Morrison</h1>
+        <nav>
+                <a href="#">About Me</a>
+                <a href="#">Work</a>
+                <a href="#">Contact Me</a>
+                <a href="#">Resume</a>
+        </nav>
     </header>
-
+<!-- Banner Image  -->
+    <!-- TODO: FIND BETTER BANNER IMAGE AND THINK OF A COOL SUBTITLE  -->
     <figure>
         <img id="banner" src="./Assets/images/banner.png" alt="a generic banner image">
-        <section class="subtitle">
-            <h2>Cool Subtitle Here!</h2>
-        </section>
+        <h2 class="subtitle">Howdy!</h2>
     </figure>
 
-    <Section>
-        <aside class="aside-about position-relative">
-            <h2 class=" text-right">About<br>Me</h2>
-            
-        </aside>
-        <section class="content">
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. A placeat ab sunt libero nesciunt fugiat aliquam dolore, sint, vitae eum temporibus ratione, debitis officia impedit facere deserunt! Libero, error iste? Lorem ipsum dolor, sit amet consectetur adipisicing elit. A placeat ab sunt libero nesciunt fugiat aliquam dolore, sint, vitae eum temporibus ratione, debitis officia impedit facere deserunt! Libero, error iste? Lorem ipsum dolor, sit amet consectetur adipisicing elit. A placeat ab sunt libero nesciunt fugiat aliquam dolore, sint, vitae eum temporibus ratione, debitis officia impedit facere deserunt! Libero, error iste?
-            </p>
+    <main>
+<!-- About Me Section  -->
+        <section>
+            <aside>
+                <h2>
+                    About<br>Me
+                </h2>
+            </aside>
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque ipsa animi odio eaque sapiente tenetur vero suscipit ad, facilis qui fugiat dolor libero dolores maxime, nesciunt, a odit non veniam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque ipsa animi odio eaque sapiente tenetur vero suscipit ad, facilis qui fugiat dolor libero dolores maxime, nesciunt, a odit non veniam.
+                </p>
+            </div>
         </section>
-    </Section>
+<!-- My Work Section  -->
+        <br>
+        <section>
+            <aside>
+                <h2>
+                    Work
+                </h2>
+            </aside>
+            <!-- TODO: INSERT DIFFERENT IMAGES FOR CARDS 2-5 AND APPLY FLEW STYLE  -->
+            <div class="content">
+                <section class="card">
+                    <img src="./Assets/images/card_1.jpg" alt="A screnshot of my first project">
+                </section>
+                <section class="card">
+                    <img src="./Assets/images/card_1.jpg" alt="A screnshot of my first project">
+                </section>
+                <section class="card">
+                    <img src="./Assets/images/card_1.jpg" alt="A screnshot of my first project">
+                </section>
+                <section class="card">
+                    <img src="./Assets/images/card_1.jpg" alt="A screnshot of my first project">
+                </section>
+                <section class="card">
+                    <img src="./Assets/images/card_1.jpg" alt="A screnshot of my first project">
+                </section>
+            </div>
+        </section>
+<!-- Contact Me Section  -->
+        <br>
+    <!-- TODO: ADD LINKS TO CONTACT ME-->
+        <section>
+            <aside>
+                <h2>
+                    Contact<br>Me
+                </h2>
+            </aside>
+            <div class="content">
+                <nav>
+                    <a href="#">555-555-5555</a>
+                    <a href="">jmorrison.m44@gmail.com</a>
+                    <a href="">GitHub</a>
+                    <a href="">LinkdIn</a>
+                    <a href="">Spotify</a>
+                </nav>
+            </div>
+        </section>
+    </main>
+
     
 </body>
 </html>
