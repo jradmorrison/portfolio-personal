@@ -112,12 +112,37 @@ aside {
     text-align: center;
 }
 
-.column {
-    flex-direction: column;
-}
+.row {
+    display: flex;
+    flex-direction: row;
+  }
 
+  .layout {
+    flex: 1;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    justify-content: center;
+  }
+  
+  .card {
+    border: 5px solid lightblue;
+    margin: 10px;
+    /* flex: 0 0 400px; */
+  }
 
-.box-1 {
+  .box-1 {
+    width: 750px;
+    height: 300px;
+  }
+
+  .box-2 {
+    width: 360px;
+    height: 150px;
+  }
+
+/* .box-1 {
     background-image: url(../images/card_1.jpg);
     background-color: grey;
     width: 100%;
@@ -135,7 +160,7 @@ aside {
     background-position: top;  
     background-repeat: no-repeat; 
     background-size: cover;
-}
+} */
 
 
 /* ID Selectors  */
@@ -184,19 +209,30 @@ aside {
         padding: 1% 2% 0;
     }
 
-    .card {
-        width: 50%;
+    .mobile-margin {
+        margin-bottom: 25px;
     }
+
   }
 
-@media screen and (max-width: 768px){
-     .card {
-        width: 100%;
-     }
-}
+  @media screen and (max-width: 768px) {
+
+    .card {
+        width: 80vw;
+        height: 150px;
+    }
+
+    .row {
+      flex-direction: column;
+    }
+
+    
+  }
 
 @media screen and (max-width: 560px){
-    nav {
+    nav,
+    .column {
         flex-direction: column;
     }
+
 }
