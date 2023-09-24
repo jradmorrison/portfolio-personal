@@ -50,6 +50,11 @@ h2 {
     font-weight: bolder;
 }
 
+h3 {
+    font-size: 125%;
+    font-weight: 500;
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -82,6 +87,14 @@ aside {
     bottom: 15px;
     margin: 15px 0;
     padding: 7px;
+    color: #31343d;
+    background-color: #92cccd;
+}
+
+.title {
+    position: absolute;
+    bottom: 15px;
+    padding: 0 5px;
     color: #31343d;
     background-color: #92cccd;
 }
@@ -124,8 +137,9 @@ aside {
   }
   
 .card {
-    border: 5px solid lightblue;
+    border: 5px solid #92cccd;
     margin: 10px;
+    position: relative;
   }
 
 .box-1 {
