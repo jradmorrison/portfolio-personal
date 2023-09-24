@@ -23,22 +23,22 @@ header nav a {
     justify-content: space-between;
     margin-right: 25px;
     text-decoration: none;
-    padding: 3px 0;
+    padding: 3px;
     color:  #92cccd;
     font-size: 150%;
     font-weight: bolder;
     border-bottom: 3px solid #92cccd;
+    background-size: 200% 200%;
+    background-image: linear-gradient(to top, #31343d 50%, transparent 50%);
+    transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
 }
 
 header nav a:hover {
-    background: ;
-
-}
-
-/* header nav a:hover {
-    background-color: #92cccd;
     color: #31343d;
-} */
+    background-image:  linear-gradient(to top, #92cccd 51%, transparent 50%);
+    transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+    background-position: 0 100%;
+}
 
 h1 {
     display: flex;
@@ -77,7 +77,6 @@ main {
 }
 
 aside {
-    justify-content: end;
     text-align: right;
     padding: 0 1% 0 0;
     width: 15%;
@@ -179,6 +178,17 @@ aside {
 
 .contact a {
     border-bottom: 3px solid #445876;
+    padding: 3px;
+    background-size: 200% 200%;
+    background-image: linear-gradient(to top, #31343d 50%, transparent 50%);
+    transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+}
+
+.contact a:hover {
+    color: white;
+    background-image:  linear-gradient(to top, #31343d 51%, transparent 50%);
+    transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+    background-position: 0 100%;
 }
 
 
@@ -247,6 +257,10 @@ aside {
       flex-direction: column;
     }
 
+    aside {
+        width: auto;
+        text-align: center;
+    }
     
   }
 
@@ -256,4 +270,23 @@ aside {
         flex-direction: column;
     }
 
+    h1 {
+        font-size: 250%;
+    }
+
+    header nav a {
+        font-size: 125%;
+        margin: 5px;
+    }
+
+    aside {
+        width: auto;
+        text-align: center;
+    }
+
+    .subtitle {
+        right: 20px;
+        bottom: 5px;
+        font-size: 150%;
+    }
 }
