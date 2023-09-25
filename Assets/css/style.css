@@ -73,6 +73,7 @@ figure {
 main {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
     max-width: 1920px;
 }
 
@@ -105,12 +106,13 @@ aside {
 
 .container {
     display: flex;
-    width: 100vw;
-    margin: 1% 2%;
+    width: 90%;
+    margin: 1% auto;
+    justify-content: center;
 }
 
 .content {
-    width: 75%;
+    width: 85%;
 }
 
 .content p {
@@ -127,20 +129,20 @@ aside {
 .row {
     display: flex;
     flex-direction: row;
+    flex: 0 0 100%;
+    justify-content: center;
   }
 
 .layout {
+    margin: 0 3%;
     flex: 1;
-    padding: 5px;
     display: flex;
     flex-wrap: wrap;
-    max-width: 1500px;
-    justify-content: center;
   }
   
 .card {
     border: 5px solid #92cccd;
-    margin: 10px;
+    margin: 1%;
     position: relative;
     opacity: 0.7;
     transition: 0.3s;
@@ -151,22 +153,21 @@ aside {
 }
 
 .box-1 {
-    width: 750px;
-    height: 300px;
+    height: 400px;
     background-image: url(../images/card_1.jpg);
     background-position: top;  
     background-repeat: no-repeat; 
     background-size: cover;
-    /* flex: 1 1 750px; */
+    flex: 1 1 98%;
   }
 
 .box-2 {
-    width: 365px;
-    height: 150px;
+    height: 200px;
     background-image: url(../images/card_1.jpg);
     background-position: top;  
     background-repeat: no-repeat; 
     background-size: cover;
+    flex: 1 1 48%;
   }
 
 .contact {
@@ -231,13 +232,17 @@ aside {
 
     .container {
         flex-direction: column;
-        margin: 1% 0;
+        margin: 1% auto;
     }
 
     .content {
         width: 100%;
         text-align: center;
         padding: 1% 2% 0;
+    }
+
+    .layout {
+        margin: 0 auto;
     }
 
     .mobile-margin {
@@ -248,34 +253,39 @@ aside {
 
   @media screen and (max-width: 768px) {
 
-    .card {
-        width: 80vw;
-        height: 150px;
-    }
-
-    .row {
-      flex-direction: column;
-    }
-
     aside {
         width: auto;
         text-align: center;
     }
-    
+
+    .card {
+        min-height: 150px;
+    }
+
+    .row {
+      flex-direction: column;
+      margin: 1% 0;
+    }
+
+    .box-1,
+    .box-2 {
+        width: 100%;
+    }
+
   }
 
-@media screen and (max-width: 560px){
-    nav,
+@media screen and (max-width: 560px) {
+
     .column {
         flex-direction: column;
     }
 
     h1 {
-        font-size: 250%;
+        font-size: 225%;
     }
 
     header nav a {
-        font-size: 125%;
+        font-size: 100%;
         margin: 5px;
     }
 
