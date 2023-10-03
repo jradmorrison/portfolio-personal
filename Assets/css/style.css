@@ -102,6 +102,7 @@ aside {
     padding: 0 5px;
     color: #31343d;
     background-color: #92cccd;
+    opacity: 1;
 }
 
 .container {
@@ -152,23 +153,50 @@ aside {
     opacity: 1;
 }
 
-.box-1 {
+.box-lg {
     height: 400px;
-    background-image: url(../images/card_1.jpg);
-    background-position: top;  
-    background-repeat: no-repeat; 
-    background-size: cover;
     flex: 1 1 98%;
   }
 
-.box-2 {
+.box-sm {
     height: 200px;
+    flex: 1 1 48%;
+  }
+
+.box-1 {
     background-image: url(../images/card_1.jpg);
     background-position: top;  
     background-repeat: no-repeat; 
     background-size: cover;
-    flex: 1 1 48%;
-  }
+}
+
+.box-2 {
+    background-image: url(../images/code-quiz.jpg);
+    background-position: center;  
+    background-repeat: no-repeat; 
+     background-size: cover;
+}
+
+.box-3 {
+    background-image: url(../images/password-generator.jpg);
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.box-4 {
+    background-image: url(../images/card_1.jpg);
+    background-position: top;  
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.box-5 {
+    background-image: url(../images/card_1.jpg);
+    background-position: top;  
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
 
 .contact {
     display: flex;
@@ -230,6 +258,10 @@ aside {
         border-bottom:3px solid #445876;
     }
 
+    .card {
+        margin: 1%;
+    }
+
     .container {
         flex-direction: column;
         margin: 1% auto;
@@ -238,7 +270,7 @@ aside {
     .content {
         width: 100%;
         text-align: center;
-        padding: 1% 2% 0;
+        padding-top: 1%;
     }
 
     .layout {
@@ -247,6 +279,14 @@ aside {
 
     .mobile-margin {
         margin-bottom: 25px;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    .title {
+        font-size: 80%;
     }
 
   }
@@ -260,16 +300,21 @@ aside {
 
     .card {
         min-height: 150px;
+        margin: 1% 0;
     }
 
     .row {
       flex-direction: column;
-      margin: 1% 0;
+      margin: 0;
     }
 
     .box-1,
     .box-2 {
         width: 100%;
+    }
+
+    .title {
+        font-size: 75%;
     }
 
   }
@@ -281,6 +326,7 @@ aside {
     }
 
     h1 {
+        padding: 0;
         font-size: 225%;
     }
 
@@ -298,5 +344,9 @@ aside {
         right: 20px;
         bottom: 5px;
         font-size: 150%;
+    }
+
+    .title {
+        font-size: 55%;
     }
 }
