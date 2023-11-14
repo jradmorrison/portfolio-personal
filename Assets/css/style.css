@@ -171,21 +171,21 @@ aside {
 }
 
 .box-2 {
-    background-image: url(../images/code-quiz.jpg);
-    background-position: center;  
+    background-image: url(../images/Screenshot2.png);
+    background-position: top;  
     background-repeat: no-repeat; 
      background-size: cover;
 }
 
 .box-3 {
-    background-image: url(../images/password-generator.jpg);
-    background-position: center;  
+    background-image: url(../images/tech-blog.png);
+    background-position: top;  
     background-repeat: no-repeat; 
     background-size: cover;
 }
 
 .box-4 {
-    background-image: url(../images/card_1.jpg);
+    background-image: url(../images/weather-dashboard.png);
     background-position: top;  
     background-repeat: no-repeat; 
     background-size: cover;
